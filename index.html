@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="ko" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, 그리고 Bootstrap 기여자들">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Sticky Footer Navbar Template · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.kr/docs/5.2/examples/sticky-footer-navbar/">
+
+    
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">BLOG</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">북여고 급식</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">홈</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">과학노트정리</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+  <div class="container">
+    <div class="container">
+        <!-- 수평선 긋기 -->
+        <hr class="my-2">
+        <div class="bg-secondary">margin 테스트</div>
+    <h1 class="mt-5">2022년 12월 북평여자고등학교 급식 메뉴 조회 정보</h1>
+  </div>
+</main>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+            </div>
+            <div class="box-body">
+                <table class="table table-bordered dt-responsive nowrap">
+                    <tbody>
+                        <tr>	
+                            <th class="text-center">일자</th>
+                            <th class="text-center">요일</th>
+                            <th class="text-center">급식 메뉴</th>
+                        </tr>
+                        
+                            
+                                
+                                <tr>	
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">목요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                강황찹쌀밥  
+짬뽕수제비  (5.6.9.10.13.17.18.)
+시금치무침  
+순대야채볶음  (5.6.10.15.)
+과일탕수육  (1.5.6.10.11.13.)
+통살슈림프커틀렛  (1.5.6.9.12.13.)
+무생채(김치)  (9.13.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">2</td>
+                                    <td class="text-center">금요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                귀리밥  
+감자탕  (5.6.10.)
+꽁치무조림  (5.6.13.)
+배추겉절이  (9.13.)
+배오이무침  (5.6.13.)
+치즈케잌  (1.2.5.6.13.)
+뿌링클치킨  (2.5.6.12.13.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">5</td>
+                                    <td class="text-center">월요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                자장밥  (5.10.13.)
+떡만두국  (1.5.6.10.13.)
+배추겉절이  (9.13.)
+단무지  
+닭다리오븐구이  (5.6.13.)
+쇠고기 탕수육  (1.2.5.6.10.12.13.)
+구슬아이스크림  (1.2.5.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">6</td>
+                                    <td class="text-center">화요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                크림스프  (2.5.6.13.)
+조각피자   (1.2.5.6.10.12.13.15.16.)
+감자튀김  (5.)
+한우 찹스테이크  (5.6.13.16.)
+깍두기  (9.13.)
+음료수(보조식)  (2.)
+과일젤리  
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">7</td>
+                                    <td class="text-center">수요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                계란볶음밥  (1.5.6.12.13.)
+순두부찌개  (5.6.9.10.13.)
+등갈비오븐구이  (5.6.10.13.)
+배추겉절이  (9.13.)
+비엔나햄볶음  (2.5.6.10.13.15.)
+귤(생과)  
+순살 가라아케  (1.2.5.6.12.13.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">8</td>
+                                    <td class="text-center">목요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                우동  (1.5.6.13.)
+베이컨김치볶음밥  (1.5.9.10.13.)
+후라이드반/양념반  (1.2.5.6.12.13.15.)
+깍두기  (9.13.)
+타코야끼  (1.2.5.6.10.13.15.16.18.)
+액상요구르트  (2.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">9</td>
+                                    <td class="text-center">금요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                15곡잡곡밥  
+장어구이  (1.5.6.13.)
+목살스테이크/  (1.5.6.10.12.13.16.)
+근대된장국  (5.6.13.)
+고사리나물  (5.6.)
+배추겉절이  (9.13.)
+식혜  
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">12</td>
+                                    <td class="text-center">월요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                친환경 쌀밥  
+육개장  (1.5.6.16.)
+오징어 쪽파무침  (5.6.13.)
+비름나물  (5.6.)
+소고기불고기  (5.6.13.)
+회오리감자  (5.)
+깍두기  (9.13.)
+마들렌  (1.2.5.6.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">13</td>
+                                    <td class="text-center">화요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                강황찹쌀밥  
+베이비슈  (1.2.5.6.13.)
+순대국  (6.10.)
+배추겉절이  (9.13.)
+시금치무침  
+새우튀김  (1.5.6.)
+치킨꼬르동블루  (1.2.5.6.12.13.15.)
+전복치즈구이   (18.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">14</td>
+                                    <td class="text-center">수요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                비빔밥  (5.6.10.13.)
+콩나물국  (5.13.)
+치즈케잌  (1.2.5.6.13.)
+닭윙양념구이  (1.4.5.6.12.13.)
+닭봉튀김  (5.15.)
+과일음료  (5.13.)
+쿠키  (1.2.4.5.6.13.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">15</td>
+                                    <td class="text-center">목요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                친환경 쌀밥  
+갈비탕  (5.6.8.13.)
+고추장 제육볶음   (5.6.10.13.)
+숙주 무채 장아찌무침  
+비엔나햄볶음  (2.5.6.10.13.15.)
+오징어튀김  (2.5.6.)
+무생채(김치)  (9.13.)
+과일음료  (5.13.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">16</td>
+                                    <td class="text-center">금요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                친환경 쌀밥  
+전복미역국  (13.)
+골뱅이무침  (5.6.13.)
+야채계란말이  (1.2.5.6.10.15.16.)
+겉절이 배추김치  (9.13.)
+아이스크림  (1.2.5.)
+딸기  
+매콤 어묵바  (1.5.6.13.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">19</td>
+                                    <td class="text-center">월요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                친환경 쌀밥  
+쇠고기무국  (5.6.13.)
+목등심김치찜  (9.10.)
+오복지무침  (13.)
+깻잎전  (1.5.6.)
+햄전  (1.5.6.10.13.)
+깍두기  (9.13.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">20</td>
+                                    <td class="text-center">화요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                보리밥  
+순두부찌개  (5.6.9.10.13.)
+알감자버터 구이  (5.6.13.)
+떡갈비  (1.2.5.6.10.12.13.)
+콩나물무침 Ⅰ  (5.13.)
+닭갈비  (5.6.13.)
+깍두기  (9.13.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">21</td>
+                                    <td class="text-center">수요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                닭갈비 볶음밥  (9.13.)
+계란국  (1.)
+어묵볶음  (1.5.6.13.)
+왕새우 구이  (1.5.6.)
+랍스타 오븐구이  (9.13.)
+무생채(김치)  (9.13.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">22</td>
+                                    <td class="text-center">목요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                카레라이스  (1.2.5.6.10.12.13.15.16.18.)
+오이무침  (5.6.12.13.)
+함박스테이크  (1.2.5.6.10.)
+훈제닭고기슬라이스  (15.)
+무생채  
+플레인 요구르트  (2.)
+떡꼬지  (1.5.6.10.13.15.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">23</td>
+                                    <td class="text-center">금요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                크림스프  (2.5.6.13.)
+스파게티  (1.2.5.6.12.13.)
+크리스마스케잌 3종  (1.2.5.6.13.)
+옛날통닭구이  (15.)
+깍두기  (9.13.)
+음료수(보조식)  (2.)
+쵸코렛  (5.13.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">26</td>
+                                    <td class="text-center">월요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                콩나물밥  (5.6.10.)
+마라탕  (5.6.13.16.17.18.)
+LA갈비구이  (5.6.10.12.13.)
+무생채(김치)  (9.13.)
+과일음료  (5.13.)
+크림빵  (1.2.5.6.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">27</td>
+                                    <td class="text-center">화요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                친환경쌀밥(조금)  
+탄탄면  (2.4.5.6.10.12.13.16.18.)
+샌드위치  (1.2.5.6.12.)
+봉추찜닭조림  (5.6.13.15.)
+배추겉절이  (9.13.)
+과일음료  (5.13.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>	
+                                    <td class="text-center">28</td>
+                                    <td class="text-center">수요일</td>
+                                    <td class="text-center">
+                                        
+                                        
+                                            <p>
+                                                [중식]
+                                                <br>
+                                                오므라이스  (1.5.)
+미소장국  (5.6.)
+파닭꼬지  (1.5.6.15.)
+배추겉절이  (9.13.)
+돈마호크  (10.)
+바나나우유   (2.)
+                                            </p>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                
+                            
+                            
+                         
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row margin-bottom-20">
+    <div class="col-md-12 text-center">
+        <!-- school_koreacharts_middle_2 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-3992373310912089"
+             data-ad-slot="3845137201"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+</div>
+
+<div class="b-example-divider"></div>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 
+
+      
+  </body>
+</html>
